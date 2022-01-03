@@ -1,0 +1,20 @@
+RewriteEngine On
+
+RewriteRule index.html index.php
+
+RewriteRule ^cart.html$ index.php?mod=cart
+
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=page&id=$2
+
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=product&cat_id=$2
+
+RewriteRule ^chi-tiet-san-pham/([0-9]+).html$ index.php?mod=product&action=detail&id=$1
+
+RewriteRule ^([0-9]+).html$ index.php?mod=cart&action=add&id=$1
+#
+#RewriteRule ^delete/([0-9]+).html$ index.php?mod=cart&action=delete&id=$1
+
+    
+
+
+

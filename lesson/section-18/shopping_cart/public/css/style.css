@@ -1,0 +1,45 @@
+body{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+
+#header,#footer{
+    background-color: aqua; 
+}
+
+#header.page{
+    background: yellow;
+}
+
+#header.product{
+    background: red;
+}
+ul{
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li{
+    padding: 8px 15px;
+    color: #fff;
+}
+
+#footer{
+    text-align: center;
+    color: #fff;
+    padding: 8px 0px;
+}
+
+#content{
+    min-height: 600px;
+    padding: 20px 0px;
+}

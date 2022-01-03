@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    width: 960px;
+    margin: 0px auto;
+}
+
+.header,.footer{
+    padding: 20px 0px;
+    background: azure;
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    padding: 15px 0px;
+}
