@@ -5,5 +5,7 @@ function construct() {
 }
 
 function indexAction() {
-    load_view('index');
+    $id = $_GET['id'];
+    $data['info'] = get_list_page($id);
+    load_view('index', $data);
 }

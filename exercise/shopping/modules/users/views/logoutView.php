@@ -1,8 +1,8 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+setcookie("login", true, time() -3000);
+setcookie("users_login", $username, time() - 3000);
+unset($_SESSION['is_login']);
+unset($_SESSION['users_login']);
+redirect("?mod=users&action=login");
 

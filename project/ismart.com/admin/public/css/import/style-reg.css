@@ -1,0 +1,45 @@
+body{
+    font-family: arial;
+    font-size: 14px;
+    line-height: 20px;
+    background: #05B2D2;
+}
+
+#wrapper-form-reg{
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px 20px 20px 20px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+#form-reg #username,#form-reg #password, #form-reg #fullname,#form-reg #email{
+    display: block;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 9px;
+    background: #f7f7f7;
+    border: none;
+}
+
+#form-reg #btn-reg{
+    display: block;
+    width: 100%;
+    background: #029ef3;
+    border: none;
+    color: #fff;
+    padding: 10px 8px;
+    margin: 15px 0px 10px;
+    cursor: pointer;
+}
+
+.page-title{
+    font-size: 18px;
+    padding: 0px 0px 20px;
+}
+
+.reg{
+    margin-left: 30%;
+}   
+
+

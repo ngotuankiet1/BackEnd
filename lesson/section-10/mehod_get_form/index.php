@@ -11,7 +11,6 @@ function show_array($data) {
 if (isset($_GET['search'])) {
     $q = $_GET['q'];
     $search = $_GET['search'];
-    echo "$q - $search";
 }
 
 $mod = $_GET['mod'];

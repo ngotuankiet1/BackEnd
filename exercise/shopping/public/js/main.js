@@ -33,4 +33,26 @@ $(document).ready(function () {
             $(this).parent('li').find('.sub-menu').slideDown();
         }
     });
+
+
+    $(".num_order").change(function () {
+        var id = $(this).attr('data_id');
+        var qty = $(this).val();
+        var data = {id: id, qty: qty};
+        $.ajax({
+            url: "?mod=cart&action=update_ajax",
+            method: "POST",
+            data: data,
+            dataType: 'json',
+            success: function (data) {
+                $("#sub_total-" + id).text(data.sub_total);
+                $("#total-price span").text(data.total);
+                $("#num").text(data.number);
+            },
+            error: function (xhr, ajaxOption, throwError) {
+                alert(xhr.status);
+                alert(throwError);
+            }
+        })
+    })
 });

@@ -5,9 +5,16 @@ function construct() {
 }
 
 function indexAction() {
-    load_view("index");
+    $cat_id = $_GET['cat_id'];
+    $data['cat_id'] = $cat_id;
+    $data['num_product'] = get_num_product($cat_id);
+    $data['get_product'] = get_list_product($cat_id);
+    $data['cat_product'] = list_product_cat($cat_id);
+    load_view("index", $data);
 }
 
 function detailAction() {
-    load_view("detail");
+    $id = $_GET['id'];
+    $data['item'] = get_info_product($id);
+    load_view("detail", $data);
 }

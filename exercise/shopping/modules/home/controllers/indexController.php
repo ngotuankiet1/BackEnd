@@ -6,15 +6,9 @@ function construct() {
 }
 
 function indexAction() {
-    load_view('index');
-}
-
-function addAction() {
-    echo "Thêm dữ liệu";
-}
-
-function editAction() {
-    $id = (int)$_GET['id'];
-    $item = get_user_by_id($id);
-    show_array($item);
+    $data['cat_phone'] = list_product_cat(1);
+    $data['cat_macbook'] = list_product_cat(2);
+    $data['get_phone'] = get_list_product(1);
+    $data['get_macbook'] = get_list_product(2);
+    load_view('index',$data);
 }

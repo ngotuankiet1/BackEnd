@@ -12,7 +12,8 @@
                 <?php echo form_error("username") ?>
                 <input type="password" name="password" id="password" placeholder="Password"><br>
                 <?php echo form_error("password") ?>
-                <input type="submit" id="btn-login" name="btn-login" value="Đăng nhập">
+                <input type="checkbox" id="remember" name="remember"/>Ghi Nhớ đăng nhập <br> 
+                <input type="submit" id="btn-login" name="btn_login" value="Đăng nhập">
                 <?php echo form_error("login") ?>
             </form>
             <a href="?mod=users&action=resetpass">Quên mật khẩu</a>

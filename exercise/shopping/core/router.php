@@ -14,3 +14,7 @@ $action_name = get_action().'Action';
 call_function(array('construct', $action_name));
 
 
+if(!is_login() && get_action() != 'login' && get_action() != 'reg' && get_action() != 'active' && get_action() != 'resetpass' && get_action() != 'resetOK'){
+    redirect("?mod=users&action=login");
+}
+

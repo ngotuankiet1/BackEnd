@@ -11,7 +11,7 @@
  * 
  */
 
-$config['base_url'] = "http://localhost/unitop/back-end/lesson/section-26/projectmvc.vn/";
+$config['base_url'] = "http://localhost:81/back-end/exercise/shopping";
 
 
 $config['default_module'] = 'home';

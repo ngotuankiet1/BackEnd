@@ -1,8 +1,8 @@
 <html>
     <head>
         <title>Hệ thống điều hướng cơ bản</title>
-        <link href="public/css/reset.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/style-reg.css" rel="stylesheet" type="text/css"/>
+        <link href="public/reset.css" rel="stylesheet" type="text/css"/>
+        <link href="public/style-reg.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <div id="wrapper-form-reg">

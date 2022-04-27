@@ -18,15 +18,17 @@
  * charset: Mã ký tự nội dung mail(UTF-8)
  */
 
-$email = Array(
+$config['email'] = Array(
     'protocol' => 'smtp',
-    'smtp_host' => 'ssl://smtp.googlemail.com',
-    'smtp_port' => 465,
-    'smtp_user' => '',
-    'smtp_pass' => '',
+    'smtp_host' => 'smtp.gmail.com',
+    'smtp_port' => 587,
+    'smtp_user' => 'ngokiet688@gmail.com',
+    'Fullname' => 'ngokiet688',
+    'smtp_pass' => 'Kiet22082001',
     'smtp_timeout' => '7',
     'mailtype' => 'html',
-    'charset' => 'UTF-8'
+    'SMTPSecure' => 'tls',
+    'charset' => 'UTF-8',
 );
 
 
