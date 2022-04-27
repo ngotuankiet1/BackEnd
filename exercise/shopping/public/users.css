@@ -1,0 +1,27 @@
+.tbl_users{ width: 100%;}
+.tbl_users tr td{
+    border-bottom: 1px solid #000;
+    padding: 8px 15px;
+}
+ul.pagging{
+    float: right;
+    margin-top: 20px;
+}
+ul.pagging li{
+    float: left;
+    padding: 0px 2px;
+}
+ul.pagging li a{
+    padding: 5px 10px;
+    color: #333;
+    border: 1px solid black;
+}
+
+ul.pagging li a:hover{
+    background: #2ad;
+}
+
+.active{
+    border:1px solid tomato !important;
+    color: tomato !important;
+}
